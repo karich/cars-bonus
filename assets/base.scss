@@ -1,0 +1,145 @@
+.base-input,
+.base-textarea {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+	.alert {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		font-size: var(--small-size);
+		color: var(--red);
+		border-radius: 4px;
+		width: 20px;
+		height: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid var(--red);
+	}
+}
+
+.form-input {
+	height: 100%;
+	width: 100%;
+	border: var(--border);
+	padding: 15px;
+	transition: 0.3s;
+	background: white;
+}
+
+.base-textarea {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+// .base-submit {
+// 	background: var(--main-color);
+// 	padding: 15px;
+// 	border-radius: 0;
+// 	color: white;
+// 	font-weight: bold;
+
+// 	span {
+// 		position: relative;
+// 		background: transparent;
+// 		font-weight: normal;
+
+// 		@media screen and (max-width: 540px) {
+// 			font-size: var(--standart-size);
+// 		}
+
+// 		&::after {
+// 			content: "";
+// 			position: absolute;
+// 			top: calc(50% - 4px);
+// 			right: -30px;
+// 			width: 20px;
+// 			height: 8px;
+// 			background: url(/svg/arrow-btn.svg) no-repeat center;
+// 			background-size: contain;
+// 			transition: 0.3s;
+// 		}
+// 	}
+// }
+
+.base-form {
+	width: 100%;
+	background: transparent;
+	display: grid;
+	row-gap: 10px;
+	grid-auto-flow: row;
+}
+
+.base-form.small {
+	.form-title {
+		font-size: var(--big-size);
+		grid-column-start: 1;
+		grid-column-end: 3;
+		color: var(--main-black);
+	}
+}
+
+.base-form.banner__form {
+	max-width: 500px;
+
+	.form-input {
+		background: white;
+		border: 1px solid #d4d4d4;
+		border-radius: 0;
+	}
+
+	.base-button {
+		border-radius: 0;
+		background: var(--main-color);
+		border: 1px solid var(--main-color);
+	}
+}
+
+.base-form.form-comp {
+	margin-top: 30px;
+	gap: 10px;
+}
+
+.base-form.burger {
+	.form-title {
+		font-size: var(--medium-size);
+	}
+}
+
+// .base-form.callback__form {
+//     min-width: 300px;
+
+//     .base-input {
+//         .form-input {
+//             background: transparent;
+//             border: 1px solid white;
+//             color: white;
+
+//             &::placeholder {
+//                 color: white;
+//             }
+//         }
+//     }
+
+//     .form__check {
+//         background: transparent;
+
+//         .form__check-label {
+//             color: white;
+
+//             .radio__img {
+//                 border-color: white;
+//             }
+
+//             .checked {
+//                 &::before {
+//                     color: white;
+//                 }
+//             }
+//         }
+//     }
+// }
