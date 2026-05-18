@@ -7,8 +7,8 @@ export const useAppStore = defineStore("appStore", () => {
   const time = ref(0)
 
   const perPage = ref(8);
-  const sort = ref('price_asc');
-  const newSort = ref('price_asc');
+  const sort = ref('real_first');
+  const newSort = ref('real_first');
   const currentPerPage = ref(8);
   const formLoading = ref(false);
   const globalLoader = ref(false);

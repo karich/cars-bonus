@@ -10,7 +10,7 @@ definePageMeta({
 });
 
 if (!appStore.officialBrands?.brands?.length) {
-	fetchClientWrapper(`${apiNew}filters/brands?exclude=9`)
+	fetchClientWrapper(`${apiNew}filters/brands?brand_tag_id=11`)
 		.then((res) => res.json())
 		.then((data) => (appStore.officialBrands = data));
 }
