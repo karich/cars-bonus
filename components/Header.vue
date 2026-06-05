@@ -102,15 +102,12 @@ const textArray = [
             </li>
           </ul>
         </nav>
-        <BaseButtonModal :btnLabel="'Перезвоните мне'"
+        <!-- <BaseButtonModal :btnLabel="'Перезвоните мне'"
           :modalTitle="`Закажите обратный звонок и наш специалист перезвонит Вам в течение 15 минут!`" :appType="6"
-          btnClass="header" :car="car" />
-        <!-- <a :href="`tel:+${appStore?.clearPhone}`" class="header__call-link">
-          <NuxtImg src="/svg/header-phone.svg" alt="phone" />
-          <p>{{ appStore.phone }}
-            <span>обратный звонок</span>
-          </p>
-        </a> -->
+          btnClass="header" :car="car" /> -->
+        <a :href="`tel:+${appStore?.clearPhone}`" class="header__call-link">
+           <span>Перезвоните мне</span>
+        </a>
         <div class="burger" @click="toggleBurger()" :class="{ open: showBurger }">
           <span></span>
           <span></span>
@@ -130,11 +127,11 @@ const textArray = [
     </Teleport>
   </header>
   <ClientOnly>
-    <Vue3Marquee :pause-on-hover="true" class="marquee__content">
+    <!-- <Vue3Marquee :pause-on-hover="true" class="marquee__content">
       <p class="message" v-for="(text, index) in textArray" :key="index">
         {{ text }}
       </p>
-    </Vue3Marquee>
+    </Vue3Marquee> -->
   </ClientOnly>
 </template>
 
@@ -405,26 +402,6 @@ const textArray = [
   box-shadow: 0px 30px 60px 0px #0000000D;
 }
 
-// .header__home {
-//   top: 30px;
-
-//   @media screen and (max-width: 768px) {
-//     top: 0;
-//   }
-// }
-
-// .header.active {
-//   top: 0;
-
-//   .container {
-//     max-width: 100%;
-
-//     .header__content {
-//       border-radius: 0 0 5px 5px;
-//     }
-//   }
-// }
-
 .mobile-menu__overlay {
   padding: 20px;
   position: fixed;
@@ -501,6 +478,64 @@ const textArray = [
     @media screen and (max-width: 540px) {
       font-size: 14px;
       line-height: 18px;
+    }
+  }
+}
+
+.header__call-link{
+  color: var(--bg-light);
+  background: var(--linear-button);
+  border-radius: var(--border-button-radius);
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  span {
+    position: relative;
+    font-weight: 500;
+    padding-right: 45px;
+    background: transparent;
+
+    &::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(135deg);
+      right: 10px;
+      width: 29px;
+      height: 29px;
+      background: url(/svg/phone-btn.svg) no-repeat center;
+      background-size: contain;
+      transition: all 0.3s ease;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    background: transparent;
+
+    span{
+      display: none;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: auto;
+        right: 40px;
+        width: 44px;
+        height: 44px;
+        background: url(/svg/header-phone.svg) no-repeat center;
+        background-size: contain;
+        transition: all 0.3s ease;
     }
   }
 }
