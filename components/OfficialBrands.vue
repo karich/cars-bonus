@@ -33,7 +33,7 @@ function toggleParallel() {
 							:key="brand.id"
 							:class="{ 'brand__item--show': showOfficial }"
 						>
-							<router-link :to="`/cars/${brand.url_brand}`" class="brand__link">
+							<NuxtLink :to="`/cars/${brand.url_brand}`" class="brand__link">
 								<div class="brand__info">
 									<NuxtImg
 										format="webp"
@@ -46,7 +46,7 @@ function toggleParallel() {
 										<span>{{ brand.cars_count }} авто</span>
 									</div>
 								</div>
-							</router-link>
+							</NuxtLink>
 						</li>
 					</ul>
 					<button class="brand__list-btn" @click="toggleOfficial()">
@@ -71,7 +71,7 @@ function toggleParallel() {
 							:key="brand.id"
 							:class="{ 'brand__item--show': showParallel }"
 						>
-							<router-link :to="`/cars/${brand.url_brand}`" class="brand__link">
+							<NuxtLink :to="`/cars/${brand.url_brand}`" class="brand__link">
 								<div class="brand__info">
 									<NuxtImg
 										format="webp"
@@ -84,7 +84,7 @@ function toggleParallel() {
 										<span>{{ brand.cars_count }} авто</span>
 									</div>
 								</div>
-							</router-link>
+							</NuxtLink>
 						</li>
 					</ul>
 					<button class="brand__list-btn" @click="toggleParallel()">
