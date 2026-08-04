@@ -1,6 +1,6 @@
 /* Api URL для фетчей */
 export const apiNew = "https://manageauto-api.ru/";
-export const apiFormNew = "https://car-application.ru/api/send/new/auto_manage";
+export const apiFormNew = "https://manageauto-applications.ru/new/auto_manage";
 export const domain = 'https://cars-bonus.ru'
 /* Api URL для фетчей */
 
