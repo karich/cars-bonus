@@ -25,7 +25,7 @@ function handleFormCheck() {
             <input class="radio__hidden" type="checkbox" v-model="checkedP"
                 @click="checkedP = !checkedP, handleFormCheck()">
             <span class="radio__img" :class="checkedP ? 'checked' : ''"></span>
-            <p>Согласен на <NuxtLink to="/politics/" target="_blank" class="check-link">
+            <p>Согласен на <NuxtLink to="/politics" target="_blank" class="check-link">
                     обработку персональных данных</NuxtLink>
             </p>
         </label>

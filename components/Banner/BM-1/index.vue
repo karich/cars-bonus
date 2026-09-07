@@ -14,7 +14,7 @@ const appStore = useAppStore();
           <p class="main__banner-text">
             Получите максмальные преимущества при покупке нового авто!
           </p>
-          <!-- <NuxtLink to="/credit/" class="main__banner-link">
+          <!-- <NuxtLink to="/credit" class="main__banner-link">
             Узнать подробнее
           </NuxtLink> -->
           <BaseButtonModal :btnLabel="'Узнать подробнее'" :btnMobileIcon="`fa-solid fa-arrow-right-long`"

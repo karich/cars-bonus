@@ -41,7 +41,7 @@ const car = computed(() => {
             <a class="footer__info-tel" :href="`tel:+${appStore.clearPhone}`">
               {{ appStore.phone }}
             </a>
-            <NuxtLink class="footer__info-adress" to="/contact/">
+            <NuxtLink class="footer__info-adress" to="/contact">
               {{ appStore.address }}
             </NuxtLink>
             <ul class="footer__nav">
@@ -49,7 +49,7 @@ const car = computed(() => {
                 <NuxtLink class="footer__nav-link" to="/">Главная</NuxtLink>
               </li>
               <li class="footer__nav-item">
-                <NuxtLink class="footer__nav-link" to="/cars/">Каталог авто</NuxtLink>
+                <NuxtLink class="footer__nav-link" to="/cars">Каталог авто</NuxtLink>
               </li>
               <li class="footer__nav-item">
                 <NuxtLink to="/cars/china" class="footer__nav-link">Китайские авто</NuxtLink>
@@ -58,13 +58,13 @@ const car = computed(() => {
                 <NuxtLink to="/cars/taxi" class="footer__nav-link">Авто для такси</NuxtLink>
               </li>
               <li class="footer__nav-item">
-                <NuxtLink class="footer__nav-link" to="/credit/">Автокредит</NuxtLink>
+                <NuxtLink class="footer__nav-link" to="/credit">Автокредит</NuxtLink>
               </li>
               <li class="footer__nav-item">
-                <NuxtLink class="footer__nav-link" to="/trade-in/">Трейд-ин</NuxtLink>
+                <NuxtLink class="footer__nav-link" to="/trade-in">Трейд-ин</NuxtLink>
               </li>
               <li class="footer__nav-item">
-                <NuxtLink class="footer__nav-link" to="/contact/">Контакты</NuxtLink>
+                <NuxtLink class="footer__nav-link" to="/contact">Контакты</NuxtLink>
               </li>
             </ul>
           </div>
@@ -87,7 +87,7 @@ const car = computed(() => {
             <p>
               {{ appStore.politics }}
             </p>
-            <NuxtLink to="/politics/">Политика конфиденциальности</NuxtLink>
+            <NuxtLink to="/politics">Политика конфиденциальности</NuxtLink>
             <p>
               Для получения более подробной информации об указанных акциях, а
               также о стоимости автомобилей обращайтесь к менеджерам по продажам.

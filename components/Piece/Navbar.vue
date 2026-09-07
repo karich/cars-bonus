@@ -3,7 +3,7 @@ import { ref } from 'vue';
 const menuList = ref([
   {
     name: 'Каталог авто',
-    link: '/cars/',
+    link: '/cars',
   },
   {
     name: 'Китайские авто',

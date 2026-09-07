@@ -17,7 +17,7 @@ function showAll() {
 			:key="brand.id"
 			:class="{ 'footer__item-show': brandShow }"
 		>
-			<NuxtLink class="footer__brand-link" :to="`/cars/${brand.url_brand}/`">
+			<NuxtLink class="footer__brand-link" :to="`/cars/${brand.url_brand}`">
 				<p>{{ brand.brand.toLowerCase() }}</p>
 				<span>{{ brand.cars_count }}</span>
 			</NuxtLink>

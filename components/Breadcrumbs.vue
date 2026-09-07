@@ -92,12 +92,12 @@ function getCrumb() {
       }
     } else if ('model' in $route.params) {
       return {
-        to: '/cars/' + $route.params.brand + '/',
+        to: '/cars/' + $route.params.brand,
         label: `Смотреть все ${cleanUpTitle(newStore.model.brand)}`
       }
     } else if ('brand' in $route.params) {
       return {
-        to: '/cars/',
+        to: '/cars',
         label: `Смотреть все новые авто`
       }
     }

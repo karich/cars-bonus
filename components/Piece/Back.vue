@@ -11,7 +11,7 @@ const $route = useRoute();
                     $route.params.brand.toUpperCase()
                 }}</NuxtLink>
 
-            <NuxtLink :to="`/cars/`" class="back__link" v-else-if="$route.name === 'brand'">←
+            <NuxtLink :to="`/cars`" class="back__link" v-else-if="$route.name === 'brand'">←
                 Смотреть все автомобили</NuxtLink>
 
             <div @click="$router.push({ name: 'Model' })" class="back__link" v-else-if="$route.name === 'generation'">←

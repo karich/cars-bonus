@@ -24,7 +24,7 @@ const appStore = useAppStore();
                             <li>Надежный банк</li>
                             <li>Быстрое оформление</li>
                         </ul>
-                        <NuxtLink :to="`/credit/`" class="banks__item-link" @click="appStore.selectedBankId = bank.id">
+                        <NuxtLink :to="`/credit`" class="banks__item-link" @click="appStore.selectedBankId = bank.id">
                             Выбрать банк
                         </NuxtLink>
                     </li>
