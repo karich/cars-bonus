@@ -8,8 +8,9 @@ export default defineNuxtConfig({
 		apiBase: process.env.API_BASE || "https://manageauto-api.ru/",
 		feedsBase: process.env.FEEDS_BASE || "https://manageip.ru/",
 		feedsDomain: process.env.FEEDS_DOMAIN || "https://cars-bonus.ru",
+		sitemapBase:
+			process.env.SITEMAP_BASE || "https://premium-api-admin.ru/sitemaps",
 	},
-
 
 	image: {
 		domains: ["api9.acduhovskoi.store/", "car-images.ru"],
